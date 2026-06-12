@@ -5,6 +5,8 @@ import ServerStats from "../components/ServerStats";
 import Footer from "../components/Footer";
 import amelGif from "../assets/img/amel.gif";
 
+import ScrollText from "../components/ScrollText"
+
 export default function Home() {
   useEffect(() => {
     let link = document.querySelector("link[rel='icon']");
@@ -23,6 +25,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <ScrollText />
         <ServerStats />
       </main>
       <Footer />
